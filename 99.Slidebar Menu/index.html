@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slidebar</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('i').click(function(){
+                $('ul').toggleClass('ul_show');
+                $('section').toggleClass('slide_image');
+              });
+              $('li').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+              });
+            });
+            
+         </script>
+</head>
+
+<body>
+    <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+        <li class="gallery"><a href="#gallery">Gallery</a></li>
+        <li class="services"><a href="#services">Services</a></li>
+        <li class="feedback"><a href="#feedback">Feedback</a></li>
+        <li class="Contact"><a href="#Contact">Contact</a></li>
+
+    </ul>
+    <section>
+        <i class="fa fa-bars"></i>
+        <div class="sec1"></div>
+        <h1 id="home">About Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique quia harum quasi consectetur eius commodi illo
+            eos placeat! Ex odit possimus veniam nesciunt alias adipisci
+            odio obcaecati, deleniti neque magnam.</p>
+        <div class="sec2"></div>
+        <h1 id="about">About Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique quia harum quasi consectetur eius commodi illo
+            eos placeat! Ex odit possimus veniam nesciunt alias adipisci
+            odio obcaecati, deleniti neque magnam.</p>
+        <div class="sec3"></div>
+        <h1 id="portfolio">Portfolio Section </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique quia harum quasi consectetur eius commodi illo
+            eos placeat! Ex odit possimus veniam nesciunt alias adipisci
+            odio obcaecati, deleniti neque magnam.</p>
+        <div class="sec4"></div>
+        <h1 id="gallery">Gallery Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique quia harum quasi consectetur eius commodi illo
+            eos placeat! Ex odit possimus veniam nesciunt alias adipisci
+            odio obcaecati, deleniti neque magnam.</p>
+        <div class="sec5"></div>
+        <h1 id="services">Services Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique quia harum quasi consectetur eius commodi illo
+            eos placeat! Ex odit possimus veniam nesciunt alias adipisci
+            odio obcaecati, deleniti neque magnam.</p>
+        <div class="sec6"></div>
+        <h1 id="feedback">Feedback Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique quia harum quasi consectetur eius commodi illo
+            eos placeat! Ex odit possimus veniam nesciunt alias adipisci
+            odio obcaecati, deleniti neque magnam.</p>
+        <div class="sec7"></div>
+        <h1 id="Contact">Contact Section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Similique quia harum quasi consectetur eius commodi illo
+            eos placeat! Ex odit possimus veniam nesciunt alias adipisci
+            odio obcaecati, deleniti neque magnam.</p>
+    </section>
+    <script src="./slidebar.js"></script>
+
+</body>
+
+</html>
